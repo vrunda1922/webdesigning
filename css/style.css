@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    border: none;
+    margin: 0%;
+    outline: none;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.inline-block {
+    display: inline
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.relative {
+    position: relative;
+}
+
+.border-radius {
+    border-radius: 10px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky
+}
+
+.margin-left {
+    margin-left: 10px;
+}
