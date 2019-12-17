@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="color.css">
-    <link rel="stylesheet" href="btn.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/bg-color.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
     .heading {
@@ -82,8 +83,6 @@
         background: #dcdcdc1f;
         width: 100%;
         padding: 15px;
-        position: -webkit-sticky;
-        position: sticky;
         top: 0;
         box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.08);
         margin-bottom: 5px;
@@ -202,9 +201,18 @@
         background: #e8e8e82e;
     }
     
+    .navigation {
+        box-shadow: 5px 3px 1px #7776768c;
+    }
+    
+    .bttns {
+        height: 1200px;
+        box-shadow: 5px 3px 1px #7776768c;
+        margin-bottom: 5px;
+    }
+    
     .btns {
         height: 100px;
-        box-shadow: 5px 3px 1px #7776768c;
         margin-bottom: 5px;
     }
     
@@ -215,6 +223,21 @@
     
     .btns .pink {
         border: 2px solid lightcoral;
+        border-radius: 20px;
+    }
+    
+    .btns .brown {
+        border: 2px solid chocolate;
+        border-radius: 20px;
+    }
+    
+    .btns .gold {
+        border: 2px solid rgb(216, 173, 65);
+        border-radius: 20px;
+    }
+    
+    .btns .green {
+        border: 2px solid rgb(110, 165, 84);
         border-radius: 20px;
     }
     
@@ -230,34 +253,267 @@
         border: 2px solid #fff;
     }
     
-    .btns .brown {
-        border: 2px solid chocolate;
-        border-radius: 20px;
-        padding: 12px;
-    }
-    
     .btns .brown:hover {
         color: #fff;
         background: chocolate;
         border: 2px solid #fff;
     }
     
-    .navigation {
-        box-shadow: 5px 3px 1px #7776768c;
+    .btns .gold:hover {
+        color: #fff;
+        background: rgb(216, 173, 65);
+        border: 2px solid #fff;
     }
     
-    .go {
+    .btns .green:hover {
+        color: #fff;
+        background: rgb(110, 165, 84);
+        border: 2px solid #fff;
+    }
+    
+    .simple {
+        height: 100px;
+    }
+    
+    .simple .btn {
         border-radius: 15px;
     }
     
-    .go:hover {
+    .simple .btn:hover {
         background: #636b749f;
     }
     
-    .btns .tomato:hover {
+    .shadow {
+        height: 100px;
+    }
+    
+    .shadow .tomato:hover {
         border-radius: 15px;
-        box-shadow: 2px 2px 1px tomato;
-        background: rgba(224, 224, 224, 0.61);
+        box-shadow: 2px 2px 1px #ff634785;
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .shadow .blue:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(43, 148, 253, 0.377);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .shadow .pink:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(233, 137, 137, 0.637);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .shadow .gold:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(214, 176, 79, 0.678);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .shadow .brown:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(209, 112, 43, 0.651);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .shadow .green:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(116, 167, 92, 0.637);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .alternate-light {
+        height: 100px;
+    }
+    
+    .alternate-light .bg-blue:hover {
+        background: rgba(30, 143, 255, 0.815);
+    }
+    
+    .alternate-light .bg-pink:hover {
+        background: rgba(240, 128, 128, 0.815);
+    }
+    
+    .alternate-light .bg-brown:hover {
+        background: rgba(210, 105, 30, 0.815);
+    }
+    
+    .alternate-light .bg-gold:hover {
+        background: rgb(216, 173, 65, 0.815);
+    }
+    
+    .alternate-light .bg-green:hover {
+        background: rgb(110, 165, 84, 0.815);
+    }
+    
+    .alternate-dark {
+        height: 100px;
+    }
+    
+    .bg-blue:hover {
+        background: rgb(10, 130, 250);
+    }
+    
+    .bg-pink:hover {
+        background: rgb(230, 105, 105);
+    }
+    
+    .bg-brown:hover {
+        background: rgb(207, 94, 12);
+    }
+    
+    .bg-gold:hover {
+        background: rgb(214, 163, 34);
+    }
+    
+    .bg-green:hover {
+        background: rgb(90, 161, 58);
+    }
+    
+    .opposite {
+        height: 100px;
+    }
+    
+    .opposite .bg-tomato {
+        background-color: tomato;
+        border: 2px solid #fff;
+    }
+    
+    .opposite .bg-blue {
+        background-color: dodgerblue;
+        border: 2px solid #fff;
+    }
+    
+    .opposite .bg-pink {
+        background-color: lightcoral;
+        border: 2px solid #fff;
+    }
+    
+    .opposite .bg-green {
+        background-color: rgb(110, 165, 84);
+        border: 2px solid #fff;
+    }
+    
+    .opposite .bg-violet {
+        background-color: violet;
+        border: 2px solid #fff;
+    }
+    
+    .opposite .bg-gold {
+        background-color: rgb(216, 173, 65);
+        border: 2px solid #fff;
+    }
+    
+    .opposite .bg-brown {
+        background-color: chocolate;
+        border: 2px solid #fff;
+    }
+    
+    .opposite .bg-tomato:hover {
+        color: tomato;
+        background: #fff;
+        border: 2px solid tomato;
+    }
+    
+    .opposite .bg-blue:hover {
+        color: dodgerblue;
+        background: #fff;
+        border: 2px solid dodgerblue;
+    }
+    
+    .opposite .bg-pink:hover {
+        color: lightcoral;
+        background: #fff;
+        border: 2px solid lightcoral;
+    }
+    
+    .opposite .bg-green:hover {
+        color: rgb(110, 165, 84);
+        background: #fff;
+        border: 2px solid rgb(110, 165, 84);
+    }
+    
+    .opposite .bg-violet:hover {
+        color: violet;
+        background: #fff;
+        border: 2px solid violet;
+    }
+    
+    .opposite .bg-gold:hover {
+        color: rgb(216, 173, 65);
+        border: 2px solid rgb(216, 173, 65);
+        background: #fff;
+    }
+    
+    .opposite .bg-brown:hover {
+        color: chocolate;
+        background: #fff;
+        border: 2px solid chocolate;
+    }
+    
+    .underline {
+        height: 100px;
+    }
+    
+    .underline .btn {
+        color: #24292e;
+        background: #fff;
+        border-bottom: 2px solid #fff
+    }
+    
+    .underline .btn:hover {
+        box-shadow: 0px 2px 5px 0px #4846467a;
+    }
+    
+    .gray .blue {
+        border: 2px solid dodgerblue;
+    }
+    
+    .gray .pink {
+        border: 2px solid lightcoral;
+    }
+    
+    .gray .brown {
+        border: 2px solid chocolate;
+    }
+    
+    .gray .gold {
+        border: 2px solid rgb(214, 163, 34);
+    }
+    
+    .gray .green {
+        border: 2px solid rgb(90, 161, 58);
+    }
+    
+    .gray .btn:hover {
+        color: #464c52;
+        border: 2px solid #464c52;
+    }
+    
+    .color-shadow {
+        height: 200px;
+        padding-top: 65px;
+    }
+    
+    .color-shadow .bg-blue:hover {
+        box-shadow: 0px 5px 1px rgba(99, 173, 246, 0.35);
+    }
+    
+    .color-shadow .bg-pink:hover {
+        box-shadow: 0px 5px 1px rgba(229, 155, 155, 0.35);
+    }
+    
+    .color-shadow .bg-gold:hover {
+        box-shadow: 0px 5px 1px rgba(204, 173, 97, 0.35);
+    }
+    
+    .color-shadow .bg-brown:hover {
+        box-shadow: 0px 5px 1px rgba(211, 119, 55, 0.31);
+    }
+    
+    .color-shadow .bg-green:hover {
+        box-shadow: 0px 5px 1px rgba(116, 167, 92, 0.35);
     }
 </style>
 
@@ -332,14 +588,77 @@
         <br><br>
     </div>
     <br><br>
-    <div class="btns">
-        <p>BUTTONS<br><br></p>
+    <div class="bttns">
+        <p>BUTTONS<br><br><br></p>
+        <div class="btns">
+            <a class="btn blue  margin-left"><i class="fas fa-anchor"></i></a>
+            <a class="btn pink margin-left"><i class="fas fa-anchor"></i></a>
+            <a class="btn brown margin-left"><i class="fas fa-anchor"></i></a>
+            <a class="btn gold margin-left"><i class="fas fa-anchor"></i></a>
+            <a class="btn green margin-left"><i class="fas fa-anchor"></i></a>
 
-        <a class="btn blue  margin-left"><i class="fas fa-anchor"></i></a>
-        <a class="btn pink margin-left"><i class="fas fa-anchor"></i></a>
-        <a class="btn brown margin-left"><i class="fas fa-fire"></i></a>
-        <a class="btn go margin-left"><i class="fas fa-caret-right"></i></a>
-        <a class="btn tomato"><i class="fas fa-fingerprint"></i></a>
+        </div>
+        <div class="simple">
+            <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+            <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+            <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+            <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+            <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+        </div>
+        <div class="shadow">
+            <a class="btn tomato"><i class="fas fa-fingerprint"></i></a>
+            <a class="btn blue"><i class="fas fa-fingerprint"></i></a>
+            <a class="btn pink"><i class="fas fa-fingerprint"></i></a>
+            <a class="btn gold"><i class="fas fa-fingerprint"></i></a>
+            <a class="btn brown"><i class="fas fa-fingerprint"></i></a>
+            <a class="btn green"><i class="fas fa-fingerprint"></i></a>
+
+        </div>
+        <div class="alternate-light">
+            <a class="btn bg-blue white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-pink white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-brown white border-radius margin-left"><i class="fas fa-bell"></i></a>
+            <a class="btn bg-gold white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-green white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+        </div>
+        <div class="alternate-dark">
+            <a class="btn bg-blue white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-pink white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-brown white border-radius margin-left"><i class="fas fa-bell"></i></a>
+            <a class="btn bg-gold white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-green white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+        </div>
+        <div class="opposite">
+            <a class="btn bg-blue white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-pink white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-brown white border-radius margin-left"><i class="fas fa-bell"></i></a>
+            <a class="btn bg-gold white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-green white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+        </div>
+        <div class="underline">
+            <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+            <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+            <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+            <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+            <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+
+        </div>
+        <div class="gray">
+            <a class="btn blue  margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn pink margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn brown margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn gold margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn green margin-left border-radius"><i class="fas fa-anchor"></i></a>
+        </div>
+        <div class="color-shadow">
+            <a class="btn bg-blue white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-pink white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-brown white border-radius margin-left"><i class="fas fa-bell"></i></a>
+            <a class="btn bg-gold white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+            <a class="btn bg-green white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+        </div>
+
+    </div>
     </div>
 
 </body>
