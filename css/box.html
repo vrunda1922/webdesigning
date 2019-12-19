@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="color.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        border: 0;
+    }
+    
+    .box {
+        height: 200px;
+        background-color: white;
+        float: left;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 55px;
+        font-size: 50px;
+    }
+    
+    .box:hover {
+        color: white;
+    }
+    
+    .box1 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box1:hover {
+        background-color: dodgerblue;
+        box-shadow: 1px 8px 10px rgba(48, 151, 255, 0.411);
+    }
+    
+    .box2 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box2:hover {
+        background-color: tomato;
+        box-shadow: 1px 8px 10px rgba(250, 106, 81, 0.466);
+    }
+    
+    .box3 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box3:hover {
+        background-color: rgb(32, 179, 88);
+        box-shadow: 1px 8px 10px rgba(43, 182, 96, 0.432);
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .box4 {
+        height: 200px;
+        width: 50%;
+        float: left;
+    }
+    
+    .box4:hover {
+        background-color: chocolate;
+        box-shadow: 1px 8px 10px rgba(250, 106, 81, 0.466);
+    }
+    
+    .box5 {
+        float: left;
+        height: 200px;
+        width: 50%;
+    }
+    
+    .box5:hover {
+        background-color: teal;
+        box-shadow: 1px 8px 10px rgba(9, 129, 129, 0.411);
+    }
+    
+    .box6 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box6:hover {
+        background-color: darkcyan;
+        box-shadow: 1px 8px 10px rgba(11, 143, 143, 0.397);
+    }
+    
+    .box7 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box7:hover {
+        background-color: deeppink;
+        box-shadow: 1px 8px 10px rgba(255, 43, 156, 0.363);
+    }
+    
+    .box8 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box8:hover {
+        background-color: darkorange;
+        box-shadow: 1px 8px 10px rgba(255, 152, 27, 0.363);
+    }
+    
+    .box9 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box9:hover {
+        background-color: violet;
+        box-shadow: 1px 8px 10px rgba(240, 145, 240, 0.479);
+    }
+    
+    .box10 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box10:hover {
+        background-color: mediumslateblue;
+        box-shadow: 1px 8px 10px rgba(137, 119, 236, 0.432);
+    }
+    
+    .box11 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box11:hover {
+        background-color: mediumseagreen;
+        box-shadow: 1px 8px 10px rgba(72, 179, 120, 0.418);
+    }
+    
+    .box12 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box12:hover {
+        background-color: darkorchid;
+        box-shadow: 1px 8px 10px rgba(158, 66, 204, 0.493);
+    }
+    
+    .box13 {
+        height: 200px;
+        width: 50%;
+        float: left;
+    }
+    
+    .box13:hover {
+        background-color: #6699FF;
+        box-shadow: 1px 8px 10px rgba(120, 165, 255, 0.404);
+    }
+    
+    .box14 {
+        height: 200px;
+        width: 50%;
+        float: left;
+    }
+    
+    .box14:hover {
+        background-color: rgb(150, 1, 187);
+        box-shadow: 1px 8px 10px rgba(209, 23, 255, 0.411);
+    }
+    
+    .box15 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box15:hover {
+        background-color: #232323;
+        box-shadow: 1px 8px 10px #44444463;
+    }
+    
+    .box16 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box16:hover {
+        background-color: #000099;
+        box-shadow: 1px 8px 10px #0c0c9963;
+    }
+    
+    .box17 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box17:hover {
+        background-color: #CC6633;
+        box-shadow: 1px 8px 10px rgba(206, 110, 62, 0.39);
+    }
+    
+    .box18 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box18:hover {
+        background-color: #FF6666;
+        box-shadow: 1px 8px 10px rgba(252, 114, 114, 0.404);
+    }
+    
+    .box19 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box19:hover {
+        background-color: #478d47;
+        box-shadow: 1px 8px 10px #4983497a;
+    }
+    
+    .box20 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box20:hover {
+        background-color: #666666;
+        box-shadow: 1px 8px 10px #6666666e;
+    }
+    
+    .box21 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box21:hover {
+        background-color: rgb(175, 68, 68);
+        box-shadow: 1px 8px 10px rgba(250, 106, 81, 0.466);
+    }
+    
+    p {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="row">
+        <div class="box4 box"> <i class="fas fa-home"></i> <br>
+            <p>Home</p>
+        </div>
+        <div class="box5 box"> <i class="far fa-file-alt"></i><br>
+            <p>About Us</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="box1 box">
+            <i class="fas fa-address-book"></i>
+            <br>
+            <p>Address Book</p>
+        </div>
+        <div class="box2 box">
+            <i class="fab fa-amazon"></i>
+            <br>
+            <p>Amazon</p>
+        </div>
+        <div class="box3 box"><i class="fab fa-android"></i> <br>
+            <p>Android</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box6 box"><i class="fab fa-accessible-icon"></i> <br>
+            <p>Services</p>
+        </div>
+        <div class="box7 box"> <i class="fas fa-gift"></i> <br>
+            <p>Offers</p>
+        </div>
+        <div class="box8 box"><i class="fas fa-phone"></i> <br>
+            <p>Contact Us</p>
+        </div>
+        <div class="box9 box"><i class="far fa-user"></i><br>
+            <p>Log In</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="box10 box"> <i class="fas fa-map-marker-alt"></i><br>
+            <p>Trips</p>
+        </div>
+        <div class="box11 box"> <i class="fas fa-plane-departure"></i> <br>
+            <p>Travel Bookings</p>
+        </div>
+        <div class="box12 box"> <i class="fas fa-hotel"></i> <br>
+            <p>Hotel Bookings</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="box13 box"><i class="fas fa-anchor"></i> <br>
+            <p>Anchor</p>
+        </div>
+        <div class="box14 box"><i class="fas fa-caret-right"></i><br>
+            <p>Towards Right</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="box19 box"><i class="fas fa-fingerprint"></i> <br>
+            <p>Fingerprint</p>
+        </div>
+        <div class="box20 box"><i class="fas fa-bell"></i> <br>
+            <p>Bell</p>
+        </div>
+        <div class="box21 box"><i class="fas fa-ad"></i> <br>
+            <p>Ad</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="box15 box"><i class="fab fa-apple"></i> <br>
+            <p>Apple</p>
+        </div>
+        <div class="box16 box"><i class="fas fa-archway"></i> <br>
+            <p>Archway</p>
+        </div>
+        <div class="box17 box"><i class="fas fa-atom"></i> <br>
+            <p>Atom</p>
+        </div>
+        <div class="box18 box"><i class="fas fa-award"></i> <br>
+            <p>Award</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
