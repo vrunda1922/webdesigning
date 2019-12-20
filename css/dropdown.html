@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="bg-color.css">
+    <link rel="stylesheet" href="btn.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0px;
+        border: none;
+        outline: none;
+        margin: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .btn {
+        position: relative;
+        margin-bottom: 2px;
+        border-radius: 5px;
+        background-color: rgba(235, 232, 232, 0.288);
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 213px;
+        font-size: 20px;
+    }
+    
+    .main {
+        display: inline-block;
+    }
+    
+    .main:hover {
+        background-color: rgba(230, 230, 230, 0.479);
+    }
+    
+    .btn::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .dropdown-content {
+        position: absolute;
+        top: 46px;
+        right: 0px;
+        background-color: white;
+        /* margin-top: 5px; */
+        border-radius: 5px;
+        display: none;
+    }
+    
+    .btn:hover .dropdown-content {
+        display: block;
+    }
+    /* .opt:hover {
+        background-color: rgb(6, 130, 255);
+    }
+     */
+    
+    .tomato {
+        color: tomato;
+        /* border: 1px solid tomato;
+    } */
+    }
+    
+    .blue {
+        color: dodgerblue;
+        /* border: 1px solid dodgerblue;
+    } */
+    }
+    
+    .pink {
+        color: lightcoral;
+        /* border: 1px solid lightcoral;
+    } */
+    }
+    
+    .green {
+        color: rgb(110, 165, 84);
+        /* border: 1px solid rgb(110, 165, 84);
+    } */
+    }
+    
+    .violet {
+        color: violet;
+        /* border: 1px solid violet;
+    } */
+    }
+    
+    .gold {
+        color: rgb(216, 173, 65);
+        /* border: 1px solid rgb(216, 173, 65);
+    } */
+    }
+    
+    .brown {
+        color: chocolate;
+        /* border: 1px solid chocolate;
+    } */
+    }
+    
+    .white {
+        color: #fff;
+        /* border: 1px solid white;
+    */
+    }
+    
+    .tomato:hover {
+        box-shadow: 0px 5px 6px 0px rgba(245, 112, 89, 0.24);
+    }
+    
+    .blue:hover {
+        box-shadow: 0px 5px 6px 0px rgba(92, 168, 230, 0.24);
+    }
+    
+    .pink:hover {
+        box-shadow: 0px 5px 6px 0px rgba(245, 107, 89, 0.24);
+    }
+    
+    .green:hover {
+        box-shadow: 0px 5px 6px 0px rgba(82, 235, 77, 0.24);
+    }
+    
+    .violet:hover {
+        box-shadow: 0px 5px 6px 0px rgba(238, 130, 238, 0.377);
+    }
+    
+    .gold:hover {
+        box-shadow: 0px 5px 6px 0px rgba(216, 173, 65, 0.295);
+    }
+    
+    .brown:hover {
+        box-shadow: 0px 5px 6px 0px rgba(204, 114, 50, 0.404);
+    }
+    
+    .nav {
+        box-shadow: 1px 8px 10px #7c7b7b4f;
+        margin-bottom: 10px;
+    }
+    
+    .heading {
+        font-size: 80px;
+        color: #232323;
+        text-align: center;
+        box-shadow: 1px 8px 10px #44444463;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <div class="heading">
+        -----------------Heading-----------------
+    </div>
+    <div class="nav">
+        <div class="btn main tomato"> <i class="fas fa-home"></i> Home
+            <div class="dropdown-content">
+                <a href="" class="btn blue block opt ">opt 1</a>
+                <a href="" class="btn pink block opt">opt 2</a>
+                <a href="" class="btn green block opt">opt 3</a>
+                <a href="" class="btn brown block opt">opt 4</a>
+            </div>
+
+        </div>
+        <div class="btn main blue"> <i class="far fa-file-alt"></i> About us
+            <div class="dropdown-content">
+                <a href="" class="btn blue block opt ">opt 1</a>
+                <a href="" class="btn pink block opt">opt 2</a>
+                <a href="" class="btn green block opt">opt 3</a>
+                <a href="" class="btn brown block opt">opt 4</a>
+            </div>
+
+        </div>
+        <div class="btn main pink"> <i class="fas fa-map-marker-alt"></i> Trips
+            <div class="dropdown-content">
+                <a href="" class="btn blue block opt ">opt 1</a>
+                <a href="" class="btn pink block opt">opt 2</a>
+                <a href="" class="btn green block opt">opt 3</a>
+                <a href="" class="btn brown block opt">opt 4</a>
+            </div>
+
+        </div>
+        <div class="btn main green"> <i class="fas fa-gift"></i> Offers
+            <div class="dropdown-content">
+                <a href="" class="btn blue block opt ">opt 1</a>
+                <a href="" class="btn pink block opt">opt 2</a>
+                <a href="" class="btn green block opt">opt 3</a>
+                <a href="" class="btn brown block opt">opt 4</a>
+            </div>
+
+        </div>
+        <div class="btn main violet"> <i class="fas fa-plane-departure"></i> Travel
+            <div class="dropdown-content">
+                <a href="" class="btn blue block opt ">opt 1</a>
+                <a href="" class="btn pink block opt">opt 2</a>
+                <a href="" class="btn green block opt">opt 3</a>
+                <a href="" class="btn brown block opt">opt 4</a>
+            </div>
+
+        </div>
+        <div class="btn main gold"> <i class="fas fa-hotel"></i> Hotel
+            <div class="dropdown-content">
+                <a href="" class="btn blue block opt ">opt 1</a>
+                <a href="" class="btn pink block opt">opt 2</a>
+                <a href="" class="btn green block opt">opt 3</a>
+                <a href="" class="btn brown block opt">opt 4</a>
+            </div>
+
+        </div>
+        <div class="btn main brown"> <i class="fas fa-phone"></i> Contact Us
+            <div class="dropdown-content">
+                <a href="" class="btn blue block opt ">opt 1</a>
+                <a href="" class="btn pink block opt">opt 2</a>
+                <a href="" class="btn green block opt">opt 3</a>
+                <a href="" class="btn brown block opt">opt 4</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+        delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur
+        magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores,
+        eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur
+        libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure
+        mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus
+        ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis
+        sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur
+        autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae
+        eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure
+        dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo
+        quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+        delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur
+        magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores,
+        eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur
+        libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure
+        mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus
+        ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis
+        sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur
+        autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae
+        eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure
+        dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo
+        quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Possimus delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+        delectus pariatur magni dolores, eaque consequuntur libero iure mollitia temporibus ex perferendis sed consectetur autem, recusandae eius. Iure dolores quo quisquam!
+    </div> -->
+</body>
+
+</html>
