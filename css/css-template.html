@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="bg-color.css">
+    <link rel="stylesheet" href="btn.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+    .nav-btn .heading {
+        width: 100%;
+        height: 70px;
+        font-size: 60px;
+        box-shadow: 5px 3px 1px #7776768c;
+    }
+    
+    .nav-btn .btn,
+    p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .nav-btn .nav1 .btn {
+        border: 2px solid;
+    }
+    
+    .nav-btn .fas {
+        margin-right: 5px;
+    }
+    
+    .nav-btn .far {
+        margin-right: 7px;
+    }
+    
+    .nav-btn .fab {
+        margin-right: 7px;
+    }
+    
+    .nav-btn .nav1 .tomato:hover {
+        background: tomato;
+        color: aliceblue;
+    }
+    
+    .nav-btn .nav1 .blue:hover {
+        background: dodgerblue;
+        color: aliceblue;
+    }
+    
+    .nav-btn .nav1 .brown:hover {
+        background: chocolate;
+        color: aliceblue;
+    }
+    
+    .nav-btn .nav1 .gold:hover {
+        background: rgb(216, 173, 65);
+        color: aliceblue;
+    }
+    
+    .nav-btn .nav1 .pink:hover {
+        background: lightcoral;
+        color: aliceblue;
+    }
+    
+    .nav-btn .nav1 .green:hover {
+        background: rgb(110, 165, 84);
+        color: aliceblue;
+    }
+    
+    .nav-btn .nav2 .btn:hover {
+        box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.08);
+        /* box-shadow: 2px 2px 10px #9a9a9a73; */
+        /* background: rgba(233, 232, 232, 0.39); */
+        background: #dcdcdc1f;
+    }
+    
+    .nav-btn .nav {
+        z-index: 10000;
+        background: #dcdcdc1f;
+        width: 100%;
+        padding: 15px;
+        top: 0;
+        box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.08);
+        margin-bottom: 5px;
+    }
+    
+    .nav-btn .nav-item {
+        width: 70px;
+        font-size: 20px;
+        text-align: center;
+        padding: 15px;
+        font-family: Open Sans, sans-serif;
+        border-radius: 5px;
+        height: 70px;
+    }
+    
+    .nav-btn .nav4 .btn {
+        background: rgba(201, 199, 199, 0.212);
+    }
+    
+    .nav-btn .nav5 .btn {
+        color: #fff;
+        background: #24292e;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    
+    .nav-btn .nav5 .btn:hover {
+        background: #fff;
+        color: #24292e;
+        border-bottom: #24292e;
+        box-shadow: 0px 2px 1px rgb(21, 21, 37);
+    }
+    
+    .nav-btn .nav .tomato:hover {
+        box-shadow: 0px 5px 6px 0px rgba(245, 112, 89, 0.24);
+    }
+    
+    .nav-btn .nav .blue:hover {
+        box-shadow: 0px 5px 6px 0px rgba(92, 168, 230, 0.24);
+    }
+    
+    .nav-btn .nav .pink:hover {
+        box-shadow: 0px 5px 6px 0px rgba(245, 107, 89, 0.24);
+    }
+    
+    .nav-btn .nav .green:hover {
+        box-shadow: 0px 5px 6px 0px rgba(82, 235, 77, 0.24);
+    }
+    
+    .nav-btn .nav .violet:hover {
+        box-shadow: 0px 5px 6px 0px rgba(238, 130, 238, 0.377);
+    }
+    
+    .nav-btn .nav .gold:hover {
+        box-shadow: 0px 5px 6px 0px rgba(216, 173, 65, 0.295);
+    }
+    
+    .nav-btn .nav .brown:hover {
+        box-shadow: 0px 5px 6px 0px rgba(204, 114, 50, 0.404);
+    }
+    
+    .nav-btn .nav2 .tomato:hover {
+        border-bottom: 2px solid rgba(247, 0, 0, 0.251);
+    }
+    
+    .nav-btn .nav2 .blue:hover {
+        border-bottom: 2px solid rgba(30, 143, 255, 0.253);
+    }
+    
+    .nav-btn .nav2 .pink:hover {
+        border-bottom: 2px solid rgba(240, 128, 128, 0.315);
+    }
+    
+    .nav-btn .nav2 .green:hover {
+        border-bottom: 2px solid rgba(110, 165, 84, 0.45);
+    }
+    
+    .nav-btn .nav2 .violet:hover {
+        border-bottom: 2px solid rgba(238, 130, 238, 0.253);
+    }
+    
+    .nav-btn .nav2 .gold:hover {
+        border-bottom: 2px solid rgba(216, 173, 65, 0.568);
+    }
+    
+    .nav-btn .nav2 .brown:hover {
+        border-bottom: 2px solid #d2691e6b;
+    }
+    
+    .nav-btn .nav4 .tomato:hover {
+        box-shadow: 2px 2px 1px tomato;
+    }
+    
+    .nav-btn .nav4 .blue:hover {
+        box-shadow: 2px 2px 1px dodgerblue;
+    }
+    
+    .nav-btn .nav4 .brown:hover {
+        box-shadow: 2px 2px 1px chocolate;
+    }
+    
+    .nav-btn .nav4 .gold:hover {
+        box-shadow: 2px 2px 1px rgb(216, 173, 65);
+    }
+    
+    .nav-btn .nav4 .pink:hover {
+        box-shadow: 2px 2px 1px lightcoral;
+    }
+    
+    .nav-btn .nav4 .green:hover {
+        box-shadow: 2px 2px 1px rgb(110, 165, 84);
+    }
+    
+    .nav-btn .nav2 {
+        padding: 15px;
+        background: #e8e8e82e;
+    }
+    
+    .nav-btn .navigation {
+        box-shadow: 5px 3px 1px #7776768c;
+    }
+    
+    .nav-btn .bttns {
+        height: 600px;
+        box-shadow: 5px 3px 1px #7776768c;
+        margin-bottom: 5px;
+    }
+    
+    .nav-btn .btns {
+        height: 100px;
+        margin-bottom: 5px;
+    }
+    
+    .nav-btn .bttns .btn {
+        padding: 20px;
+        margin-left: 35px;
+        /* font-size: 30px; */
+        /* margin-right: 35px; */
+    }
+    
+    .nav-btn .btns .blue {
+        border: 2px solid dodgerblue;
+        border-radius: 20px;
+    }
+    
+    .nav-btn .btns .pink {
+        border: 2px solid lightcoral;
+        border-radius: 20px;
+    }
+    
+    .nav-btn .btns .brown {
+        border: 2px solid chocolate;
+        border-radius: 20px;
+    }
+    
+    .nav-btn .btns .gold {
+        border: 2px solid rgb(216, 173, 65);
+        border-radius: 20px;
+    }
+    
+    .nav-btn .btns .green {
+        border: 2px solid rgb(110, 165, 84);
+        border-radius: 20px;
+    }
+    
+    .nav-btn .btns .blue:hover {
+        color: #fff;
+        background: dodgerblue;
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .btns .pink:hover {
+        color: #fff;
+        background: lightcoral;
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .btns .brown:hover {
+        color: #fff;
+        background: chocolate;
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .btns .gold:hover {
+        color: #fff;
+        background: rgb(216, 173, 65);
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .btns .green:hover {
+        color: #fff;
+        background: rgb(110, 165, 84);
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .simple {
+        height: 100px;
+    }
+    
+    .nav-btn .simple .btn {
+        border-radius: 15px;
+        border: 1px solid black;
+        margin-left: 45px;
+    }
+    
+    .nav-btn .simple .btn:hover {
+        background: #636b749f;
+    }
+    
+    .nav-btn .shadow {
+        height: 100px;
+    }
+    
+    .nav-btn .shadow .btn {
+        border-radius: 15px;
+    }
+    
+    .nav-btn .shadow .tomato {
+        border: 1px solid tomato;
+    }
+    
+    .nav-btn .shadow .blue {
+        border: 1px solid dodgerblue;
+    }
+    
+    .nav-btn .shadow .green {
+        border: 1px solid rgb(110, 165, 84);
+    }
+    
+    .nav-btn .shadow .pink {
+        border: 1px solid lightcoral;
+    }
+    
+    .nav-btn .shadow .brown {
+        border: 1px solid chocolate;
+    }
+    
+    .nav-btn .shadow .gold {
+        border: 1px solid rgb(216, 173, 65);
+    }
+    
+    .nav-btn .shadow .tomato:hover {
+        box-shadow: 2px 2px 1px #ff634785;
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .nav-btn .shadow .blue:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(43, 148, 253, 0.377);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .nav-btn .shadow .pink:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(233, 137, 137, 0.637);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .nav-btn .shadow .gold:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(214, 176, 79, 0.678);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .nav-btn .shadow .brown:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(209, 112, 43, 0.651);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .nav-btn .shadow .green:hover {
+        border-radius: 15px;
+        box-shadow: 2px 2px 1px rgba(116, 167, 92, 0.637);
+        background: rgba(175, 175, 175, 0.404);
+    }
+    
+    .nav-btn .alternate-light {
+        height: 100px;
+    }
+    
+    .nav-btn .alternate-light .bg-blue:hover {
+        background: rgba(55, 153, 252, 0.815);
+    }
+    
+    .nav-btn .alternate-light .bg-pink:hover {
+        background: rgba(236, 147, 147, 0.815);
+    }
+    
+    .nav-btn .alternate-light .bg-brown:hover {
+        background: rgba(206, 115, 51, 0.815);
+    }
+    
+    .nav-btn .alternate-light .bg-gold:hover {
+        background: rgba(216, 178, 81, 0.815);
+    }
+    
+    .nav-btn .alternate-light .bg-green:hover {
+        background: rgba(119, 165, 97, 0.815);
+    }
+    
+    .nav-btn .bg-blue:hover {
+        background: rgb(10, 130, 250);
+    }
+    
+    .nav-btn .bg-pink:hover {
+        background: rgb(230, 105, 105);
+    }
+    
+    .nav-btn .bg-brown:hover {
+        background: rgb(207, 94, 12);
+    }
+    
+    .nav-btn .bg-gold:hover {
+        background: rgb(214, 163, 34);
+    }
+    
+    .nav-btn .bg-green:hover {
+        background: rgb(90, 161, 58);
+    }
+    
+    .nav-btn .opposite {
+        height: 100px;
+    }
+    
+    .nav-btn .opposite .bg-tomato {
+        background-color: tomato;
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .opposite .bg-blue {
+        background-color: dodgerblue;
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .opposite .bg-pink {
+        background-color: lightcoral;
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .opposite .bg-green {
+        background-color: rgb(110, 165, 84);
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .opposite .bg-violet {
+        background-color: violet;
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .opposite .bg-gold {
+        background-color: rgb(216, 173, 65);
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .opposite .bg-brown {
+        background-color: chocolate;
+        border: 2px solid #fff;
+    }
+    
+    .nav-btn .opposite .bg-tomato:hover {
+        color: tomato;
+        background: #fff;
+        border: 2px solid tomato;
+    }
+    
+    .nav-btn .opposite .bg-blue:hover {
+        color: dodgerblue;
+        background: #fff;
+        border: 2px solid dodgerblue;
+    }
+    
+    .nav-btn .opposite .bg-pink:hover {
+        color: lightcoral;
+        background: #fff;
+        border: 2px solid lightcoral;
+    }
+    
+    .nav-btn .opposite .bg-green:hover {
+        color: rgb(110, 165, 84);
+        background: #fff;
+        border: 2px solid rgb(110, 165, 84);
+    }
+    
+    .nav-btn .opposite .bg-violet:hover {
+        color: violet;
+        background: #fff;
+        border: 2px solid violet;
+    }
+    
+    .nav-btn .opposite .bg-gold:hover {
+        color: rgb(216, 173, 65);
+        border: 2px solid rgb(216, 173, 65);
+        background: #fff;
+    }
+    
+    .nav-btn .opposite .bg-brown:hover {
+        color: chocolate;
+        background: #fff;
+        border: 2px solid chocolate;
+    }
+    
+    .nav-btn .underline {
+        height: 100px;
+    }
+    
+    .nav-btn .underline .btn {
+        color: #24292e;
+        background: #fff;
+        border-bottom: 2px solid #fff;
+        margin-left: 42px;
+    }
+    
+    .nav-btn .underline .btn:hover {
+        box-shadow: 0px 2px 5px 0px #4846467a;
+    }
+    
+    .nav-btn .gray .blue {
+        border: 2px solid dodgerblue;
+    }
+    
+    .nav-btn .gray .pink {
+        border: 2px solid lightcoral;
+    }
+    
+    .nav-btn .gray .brown {
+        border: 2px solid chocolate;
+    }
+    
+    .nav-btn .gray .gold {
+        border: 2px solid rgb(214, 163, 34);
+    }
+    
+    .nav-btn .gray .green {
+        border: 2px solid rgb(90, 161, 58);
+    }
+    
+    .nav-btn .gray .btn:hover {
+        color: #464c52;
+        border: 2px solid #464c52;
+    }
+    
+    .nav-btn .color-shadow {
+        height: 200px;
+        padding-top: 65px;
+    }
+    
+    .nav-btn .color-shadow .bg-blue:hover {
+        box-shadow: 0px 5px 1px rgba(99, 173, 246, 0.35);
+    }
+    
+    .nav-btn .color-shadow .bg-pink:hover {
+        box-shadow: 0px 5px 1px rgba(229, 155, 155, 0.35);
+    }
+    
+    .nav-btn .color-shadow .bg-gold:hover {
+        box-shadow: 0px 5px 1px rgba(204, 173, 97, 0.35);
+    }
+    
+    .nav-btn .color-shadow .bg-brown:hover {
+        box-shadow: 0px 5px 1px rgba(211, 119, 55, 0.31);
+    }
+    
+    .nav-btn .color-shadow .bg-green:hover {
+        box-shadow: 0px 5px 1px rgba(116, 167, 92, 0.35);
+    }
+    
+    .nav-btn .float-left {
+        margin-top: -20px;
+    }
+    
+    .nav-btn .float-left .btn {
+        margin-top: 30px;
+    }
+    
+    .dropdown {
+        height: 400px;
+        box-shadow: 5px 3px 1px #7776768c;
+    }
+    
+    .dropdown .btn {
+        position: relative;
+        margin-bottom: 2px;
+        border-radius: 5px;
+        background-color: rgba(235, 232, 232, 0.288);
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 213px;
+        font-size: 20px;
+    }
+    
+    .dropdown .main {
+        display: inline-block;
+    }
+    
+    .dropdown .main:hover {
+        background-color: rgba(230, 230, 230, 0.479);
+    }
+    
+    .dropdown .btn::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .dropdown .dropdown-content {
+        position: absolute;
+        top: 46px;
+        right: 0px;
+        background-color: white;
+        /* margin-top: 5px; */
+        border-radius: 5px;
+        display: none;
+    }
+    
+    .dropdown .btn:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown .tomato {
+        color: tomato;
+    }
+    
+    .blue {
+        color: dodgerblue;
+    }
+    
+    .dropdown .pink {
+        color: lightcoral;
+    }
+    
+    .dropdown .green {
+        color: rgb(110, 165, 84);
+    }
+    
+    .dropdown .violet {
+        color: violet;
+    }
+    
+    .dropdown .gold {
+        color: rgb(216, 173, 65);
+    }
+    
+    .dropdown .brown {
+        color: chocolate;
+    }
+    
+    .dropdown .white {
+        color: #fff;
+    }
+    
+    .dropdown .tomato:hover {
+        box-shadow: 0px 5px 6px 0px rgba(245, 112, 89, 0.24);
+    }
+    
+    .dropdown .blue:hover {
+        box-shadow: 0px 5px 6px 0px rgba(92, 168, 230, 0.24);
+    }
+    
+    .dropdown .pink:hover {
+        box-shadow: 0px 5px 6px 0px rgba(245, 107, 89, 0.24);
+    }
+    
+    .dropdown .green:hover {
+        box-shadow: 0px 5px 6px 0px rgba(82, 235, 77, 0.24);
+    }
+    
+    .dropdown .violet:hover {
+        box-shadow: 0px 5px 6px 0px rgba(238, 130, 238, 0.377);
+    }
+    
+    .dropdown .gold:hover {
+        box-shadow: 0px 5px 6px 0px rgba(216, 173, 65, 0.295);
+    }
+    
+    .dropdown .brown:hover {
+        box-shadow: 0px 5px 6px 0px rgba(204, 114, 50, 0.404);
+    }
+    
+    .dropdown .nav {
+        box-shadow: 1px 8px 10px #7c7b7b4f;
+        margin-bottom: 10px;
+    }
+    
+    .dropdown .heading {
+        font-size: 60px;
+        color: #232323;
+        box-shadow: 1px 8px 10px #44444463;
+        margin-bottom: 10px;
+    }
+    
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        border: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .boxes .heading {
+        font-size: 60px;
+        color: #232323;
+        box-shadow: 1px 8px 10px #44444463;
+        margin-bottom: 10px;
+    }
+    
+    .boxes {
+        box-shadow: 5px 3px 1px #7776768c;
+    }
+    
+    .box {
+        height: 200px;
+        background-color: white;
+        float: left;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 55px;
+        font-size: 50px;
+    }
+    
+    .box:hover {
+        color: white;
+    }
+    
+    .box1 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box1:hover {
+        background-color: dodgerblue;
+        box-shadow: 1px 8px 10px rgba(48, 151, 255, 0.411);
+    }
+    
+    .box2 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box2:hover {
+        background-color: tomato;
+        box-shadow: 1px 8px 10px rgba(250, 106, 81, 0.466);
+    }
+    
+    .box3 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box3:hover {
+        background-color: rgb(32, 179, 88);
+        box-shadow: 1px 8px 10px rgba(43, 182, 96, 0.432);
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .box4 {
+        height: 200px;
+        width: 50%;
+        float: left;
+    }
+    
+    .box4:hover {
+        background-color: chocolate;
+        box-shadow: 1px 8px 10px rgba(250, 106, 81, 0.466);
+    }
+    
+    .box5 {
+        float: left;
+        height: 200px;
+        width: 50%;
+    }
+    
+    .box5:hover {
+        background-color: teal;
+        box-shadow: 1px 8px 10px rgba(9, 129, 129, 0.411);
+    }
+    
+    .box6 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box6:hover {
+        background-color: darkcyan;
+        box-shadow: 1px 8px 10px rgba(11, 143, 143, 0.397);
+    }
+    
+    .box7 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box7:hover {
+        background-color: deeppink;
+        box-shadow: 1px 8px 10px rgba(255, 43, 156, 0.363);
+    }
+    
+    .box8 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box8:hover {
+        background-color: darkorange;
+        box-shadow: 1px 8px 10px rgba(255, 152, 27, 0.363);
+    }
+    
+    .box9 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box9:hover {
+        background-color: violet;
+        box-shadow: 1px 8px 10px rgba(240, 145, 240, 0.479);
+    }
+    
+    .box10 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box10:hover {
+        background-color: mediumslateblue;
+        box-shadow: 1px 8px 10px rgba(137, 119, 236, 0.432);
+    }
+    
+    .box11 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box11:hover {
+        background-color: mediumseagreen;
+        box-shadow: 1px 8px 10px rgba(72, 179, 120, 0.418);
+    }
+    
+    .box12 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box12:hover {
+        background-color: darkorchid;
+        box-shadow: 1px 8px 10px rgba(158, 66, 204, 0.493);
+    }
+    
+    .box13 {
+        height: 200px;
+        width: 50%;
+        float: left;
+    }
+    
+    .box13:hover {
+        background-color: #6699FF;
+        box-shadow: 1px 8px 10px rgba(120, 165, 255, 0.404);
+    }
+    
+    .box14 {
+        height: 200px;
+        width: 50%;
+        float: left;
+    }
+    
+    .box14:hover {
+        background-color: rgb(150, 1, 187);
+        box-shadow: 1px 8px 10px rgba(209, 23, 255, 0.411);
+    }
+    
+    .box15 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box15:hover {
+        background-color: #232323;
+        box-shadow: 1px 8px 10px #44444463;
+    }
+    
+    .box16 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box16:hover {
+        background-color: #000099;
+        box-shadow: 1px 8px 10px #0c0c9963;
+    }
+    
+    .box17 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box17:hover {
+        background-color: #CC6633;
+        box-shadow: 1px 8px 10px rgba(206, 110, 62, 0.39);
+    }
+    
+    .box18 {
+        height: 200px;
+        width: 25%;
+        float: left;
+    }
+    
+    .box18:hover {
+        background-color: #FF6666;
+        box-shadow: 1px 8px 10px rgba(252, 114, 114, 0.404);
+    }
+    
+    .box19 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box19:hover {
+        background-color: #478d47;
+        box-shadow: 1px 8px 10px #4983497a;
+    }
+    
+    .box20 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box20:hover {
+        background-color: #666666;
+        box-shadow: 1px 8px 10px #6666666e;
+    }
+    
+    .box21 {
+        height: 200px;
+        width: 33.33%;
+        float: left;
+    }
+    
+    .box21:hover {
+        background-color: rgb(175, 68, 68);
+        box-shadow: 1px 8px 10px rgba(250, 106, 81, 0.466);
+    }
+    
+    .boxes p {
+        font-size: 20px;
+    }
+    
+    .badgess .btn {
+        height: 20px;
+        width: 65px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    .badgess .badges {
+        margin-top: 20px;
+    }
+    
+    .badgess .heading {
+        font-size: 60px;
+        color: #232323;
+        box-shadow: 1px 8px 10px #44444463;
+        margin-bottom: 10px;
+    }
+    
+    .badgess .bg-pink:hover {
+        background-color: rgb(240, 64, 64);
+    }
+    
+    .badgess .bg-violet:hover {
+        background-color: rgb(231, 49, 231);
+    }
+    
+    .badgess .bg-green:hover {
+        background-color: rgb(65, 168, 17);
+    }
+    
+    .badgess .bg-tomato:hover {
+        background-color: rgb(253, 41, 4);
+    }
+    
+    .badgess .bg-blue:hover {
+        background-color: rgb(2, 111, 253);
+    }
+</style>
+
+<body>
+    <div class="nav-btn">
+        <div class="heading">
+            <span class="tag"> Navbars</span>
+            </p>
+        </div>
+        <br><br>
+        <!--Navigation 1-->
+        <div class="navigation">
+            <div class="nav1">
+                <p>THEME 1:<br><br></p>
+                <nav>
+                    <a href="" class="btn inline-block tomato border-radius"> <i class="fas fa-home"></i>HOME</a>
+                    <a href="" class="btn inline-block gold border-radius"> <i class="far fa-file-alt"></i>ABOUT US</a>
+                    <a href="" class="btn inline-block blue border-radius"><i class="fab fa-accessible-icon"></i>SERVICES</a>
+                    <a href="" class="btn inline-block brown border-radius"> <i class="fas fa-gift"></i>OFFERS</a>
+                    <a href="" class="btn inline-block pink border-radius"><i class="fas fa-phone"></i>CONTACT US</a>
+                    <a href="" class="btn inline-block green border-radius"><i class="far fa-user"></i>LOG IN</a>
+                </nav>
+            </div>
+            <br> <br>
+            <div>
+                <p>THEME 2:<br><br></p>
+                <nav class="nav2">
+                    <a href="" class="btn inline-block tomato"> <i class="fas fa-home"></i>HOME</a>
+                    <a href="" class="btn inline-block gold"> <i class="far fa-file-alt"></i>ABOUT US</a>
+                    <a href="" class="btn inline-block blue"><i class="fab fa-accessible-icon"></i>SERVICES</a>
+                    <a href="" class="btn inline-block brown"> <i class="fas fa-gift"></i>OFFERS</a>
+                    <a href="" class="btn inline-block pink"><i class="fas fa-phone"></i>CONTACT US</a>
+                    <a href="" class="btn inline-block green"><i class="far fa-user"></i>LOG IN</a>
+                </nav>
+            </div>
+            <br> <br>
+            <p>THEME 3:<br><br></p>
+
+            <nav class="nav">
+                <a class="nav-item tomato"> <i class="fas fa-home"></i> Home</a>
+                <a class="nav-item blue"> <i class="far fa-file-alt"></i> About us</a>
+                <a class="nav-item pink"> <i class="fas fa-map-marker-alt"></i> Trips</a>
+                <a class="nav-item green"> <i class="fas fa-gift"></i> Offers</a>
+                <a class="nav-item violet"> <i class="fas fa-plane-departure"></i> Travel Bookings</a>
+                <a class="nav-item gold"> <i class="fas fa-hotel"></i> Hotel Bookings</a>
+                <a class="nav-item brown"> <i class="fas fa-phone"></i> Contact Us</a>
+            </nav>
+            <br> <br>
+            <div class="nav4">
+                <p>THEME 4:<br><br></p>
+                <nav>
+                    <a href="" class="btn inline-block tomato"> <i class="fas fa-home"></i>HOME</a>
+                    <a href="" class="btn inline-block gold"> <i class="far fa-file-alt"></i>ABOUT US</a>
+                    <a href="" class="btn inline-block blue"><i class="fab fa-accessible-icon"></i>SERVICES</a>
+                    <a href="" class="btn inline-block brown"> <i class="fas fa-gift"></i>OFFERS</a>
+                    <a href="" class="btn inline-block pink"><i class="fas fa-phone"></i>CONTACT US</a>
+                    <a href="" class="btn inline-block green"><i class="far fa-user"></i>LOG IN</a>
+                </nav>
+            </div>
+            <br> <br>
+            <div class="nav5">
+                <p>THEME 5:<br><br></p>
+                <nav>
+                    <a href="" class="btn inline-block"> <i class="fas fa-home"></i>HOME</a>
+                    <a href="" class="btn inline-block"> <i class="far fa-file-alt"></i>ABOUT US</a>
+                    <a href="" class="btn inline-block"><i class="fab fa-accessible-icon"></i>SERVICES</a>
+                    <a href="" class="btn inline-block"> <i class="fas fa-gift"></i>OFFERS</a>
+                    <a href="" class="btn inline-block"><i class="fas fa-phone"></i>CONTACT US</a>
+                    <a href="" class="btn inline-block"><i class="far fa-user"></i>LOG IN</a>
+                </nav>
+            </div>
+
+            <br><br>
+        </div>
+
+        <div class="bttns">
+            <div class="heading">
+                <span class="tag"> Buttons</span>
+                <br><br>
+                </p>
+            </div>
+            <br><br>
+            <div class="float-left">
+                <div class="btns">
+                    <a class="btn blue  "><i class="fas fa-anchor"></i></a>
+                    <a class="btn pink margin-left"><i class="fas fa-anchor"></i></a>
+                    <a class="btn brown margin-left"><i class="fas fa-anchor"></i></a>
+                    <a class="btn gold margin-left"><i class="fas fa-anchor"></i></a>
+                    <a class="btn green margin-left"><i class="fas fa-anchor"></i></a>
+
+                </div>
+                <div class="simple">
+                    <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+                    <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+                    <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+                    <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+                    <a class="btn margin-left"><i class="fas fa-caret-right"></i></a>
+                </div>
+                <div class="shadow">
+                    <a class="btn blue"><i class="fas fa-fingerprint"></i></a>
+                    <a class="btn pink"><i class="fas fa-fingerprint"></i></a>
+                    <a class="btn gold"><i class="fas fa-fingerprint"></i></a>
+                    <a class="btn brown"><i class="fas fa-fingerprint"></i></a>
+                    <a class="btn green"><i class="fas fa-fingerprint"></i></a>
+
+                </div>
+                <div class="alternate-light">
+                    <a class="btn bg-blue white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn bg-pink white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn bg-brown white border-radius margin-left"><i class="fas fa-bell"></i></a>
+                    <a class="btn bg-gold white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn bg-green white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                </div>
+            </div>
+            <div class="float-right" style="margin-right: 220px;">
+                <div class="opposite">
+                    <a class="btn bg-blue white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn bg-pink white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn bg-brown white border-radius margin-left"><i class="fas fa-bell"></i></a>
+                    <a class="btn bg-gold white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn bg-green white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                </div>
+                <div class="underline">
+                    <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+                    <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+                    <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+                    <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+                    <a class="btn margin-left"> <i class="fas fa-bell"></i></a>
+
+                </div>
+                <div class="gray">
+                    <a class="btn blue  margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn pink margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn brown margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn gold margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn green margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                </div>
+                <div class="color-shadow">
+                    <a class="btn bg-blue white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn bg-pink white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn bg-brown white border-radius margin-left"><i class="fas fa-bell"></i></a>
+                    <a class="btn bg-gold white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                    <a class="btn bg-green white margin-left border-radius"><i class="fas fa-anchor"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="dropdown">
+        <div class="heading">
+            Drop-Down
+            <br>
+        </div>
+        <div class="nav">
+            <div class="btn main tomato"> <i class="fas fa-home"></i> Home
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main blue"> <i class="far fa-file-alt"></i> About us
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main pink"> <i class="fas fa-map-marker-alt"></i> Trips
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main green"> <i class="fas fa-gift"></i> Offers
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main violet"> <i class="fas fa-plane-departure"></i> Travel
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main gold"> <i class="fas fa-hotel"></i> Hotel
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main brown"> <i class="fas fa-phone"></i> Contact Us
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="boxes">
+        <div class="heading">
+            Cards
+        </div>
+
+        <div class="row">
+            <div class="box4 box"> <i class="fas fa-home"></i> <br>
+                <p>Home</p>
+            </div>
+            <div class="box5 box"> <i class="far fa-file-alt"></i><br>
+                <p>About Us</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="box1 box">
+                <i class="fas fa-address-book"></i>
+                <br>
+                <p>Address Book</p>
+            </div>
+            <div class="box2 box">
+                <i class="fab fa-amazon"></i>
+                <br>
+                <p>Amazon</p>
+            </div>
+            <div class="box3 box"><i class="fab fa-android"></i> <br>
+                <p>Android</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box6 box"><i class="fab fa-accessible-icon"></i> <br>
+                <p>Services</p>
+            </div>
+            <div class="box7 box"> <i class="fas fa-gift"></i> <br>
+                <p>Offers</p>
+            </div>
+            <div class="box8 box"><i class="fas fa-phone"></i> <br>
+                <p>Contact Us</p>
+            </div>
+            <div class="box9 box"><i class="far fa-user"></i><br>
+                <p>Log In</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="box10 box"> <i class="fas fa-map-marker-alt"></i><br>
+                <p>Trips</p>
+            </div>
+            <div class="box11 box"> <i class="fas fa-plane-departure"></i> <br>
+                <p>Travel Bookings</p>
+            </div>
+            <div class="box12 box"> <i class="fas fa-hotel"></i> <br>
+                <p>Hotel Bookings</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="box13 box"><i class="fas fa-anchor"></i> <br>
+                <p>Anchor</p>
+            </div>
+            <div class="box14 box"><i class="fas fa-caret-right"></i><br>
+                <p>Towards Right</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="box19 box"><i class="fas fa-fingerprint"></i> <br>
+                <p>Fingerprint</p>
+            </div>
+            <div class="box20 box"><i class="fas fa-bell"></i> <br>
+                <p>Bell</p>
+            </div>
+            <div class="box21 box"><i class="fas fa-ad"></i> <br>
+                <p>Ad</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="box15 box"><i class="fab fa-apple"></i> <br>
+                <p>Apple</p>
+            </div>
+            <div class="box16 box"><i class="fas fa-archway"></i> <br>
+                <p>Archway</p>
+            </div>
+            <div class="box17 box"><i class="fas fa-atom"></i> <br>
+                <p>Atom</p>
+            </div>
+            <div class="box18 box"><i class="fas fa-award"></i> <br>
+                <p>Award</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="badgess">
+
+        <div class="heading">
+            Badges
+        </div>
+        <div class="badges">
+            <a href="" class="badge bg-blue white">Facebook</a>
+            <a href="" class="badge bg-pink white">linked In</a>
+            <a href="" class="badge bg-violet white">instagram</a>
+            <a href="" class="badge bg-green white">success</a>
+            <a href="" class="badge bg-tomato white">Failure</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
