@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="btn.css">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="bg-color.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        border: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 110%;
+    }
+    
+    .form {
+        width: 100%;
+        background-color: rgba(252, 210, 252, 0.678);
+        margin: 0 auto;
+        padding: 20px;
+        color: rgb(116, 1, 116);
+        border-radius: 10px;
+        box-shadow: 1px 8px 10px #44444463;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .heading {
+        text-align: center;
+        font-size: 60px;
+        text-decoration: underline;
+    }
+    
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        display: block;
+        outline: none;
+        padding: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 85%;
+        border-radius: 5px;
+        padding-left: 50px;
+        border: 5px solid white;
+    }
+    
+    input[type="submit"] {
+        color: rgb(116, 1, 116);
+        box-shadow: 1px 8px 10px #44444463;
+        border: 2px solid white;
+        width: 85%;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    
+    .btn:hover {
+        border: 2px solid rgb(116, 1, 116);
+    }
+    
+    label {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 100px;
+        font-size: 25px;
+    }
+    
+    input[type="text"]:invalid {
+        border: 5px solid firebrick;
+    }
+    
+    input[type="text"]:valid {
+        border: 5px solid forestgreen;
+    }
+    
+    input[type="text"]:focus {
+        background-color: whitesmoke;
+    }
+    
+    input[type="text"]:read-only {
+        background-color: whitesmoke;
+        border: 5px solid whitesmoke;
+        color: gray;
+        font-style: italic;
+    }
+    
+    input[type="email"]:disabled {
+        background-color: whitesmoke;
+        border: 5px solid whitesmoke;
+        color: #232323;
+        font-style: italic;
+    }
+    
+    input:hover,
+    textarea:hover {
+        box-shadow: 1px 8px 10px #44444463;
+    }
+    
+    .inputgroup {
+        position: relative;
+    }
+    
+    .icon {
+        position: absolute;
+        top: 70px;
+        left: 115px;
+    }
+    
+    @media screen and (max-width: 320px) {
+        .form {
+            background-color: lightblue;
+        }
+        label {
+            margin-left: 0px;
+        }
+        .icon {
+            left: 30px;
+        }
+    }
+</style>
+
+<body>
+    <div class="form">
+        <div class="heading">SIGN UP </div>
+        <form action="">
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">First Name:</label>
+                    <input type="text" value="First Name" required>
+                    <span class="icon"><i class="fas fa-user"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Last Name:</label>
+                    <input type="text" placeholder="last Name" value="sample" readonly>
+                    <span class="icon"><i class="ln fas fa-user"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">DOB:</label>
+                    <input type="date" placeholder="DD/MM/YY" required>
+                    <span class="icon"><i class=" dob fas fa-birthday-cake"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Email Id:</label>
+                    <input type="email" value="abcd@wxyz.pqrs" disabled>
+                    <span class="icon"><i class="mail fas fa-at"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Set Username:</label>
+                    <input type="text" placeholder="abc_123">
+                    <span class="icon"><i class="un far fa-user-circle"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Set Password:</label>
+                    <input type="password" placeholder="abc@123">
+                    <span class="icon"><i class="sp fas fa-key"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Confirm Password:</label>
+                    <input type="password" class="blue" placeholder="abc@123">
+                    <span class="icon"><i class="cp fas fa-key"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <label for="">Bio:</label>
+                <div class="inputgroup">
+                    <textarea name="" id="" cols="30" rows="10" class="blue" placeholder="abc xyz"></textarea>
+                </div>
+            </div>
+            <br>
+            <input type="submit" class="btn bg-white" value="Sign Up"></input>
+        </form>
+    </div>
+</body>
+
+</html>
