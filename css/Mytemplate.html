@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="bg-color.css">
+    <link rel="stylesheet" href="btn.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0px;
+        border: none;
+        outline: none;
+        margin: 0px;
+        scroll-behavior: smooth;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .heading {
+        width: 100%;
+        font-size: 60px;
+        border-radius: 5px;
+        background-color: #232323;
+        background-image: url(img/front2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(5px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .content {
+        float: left;
+        color: whitesmoke;
+        margin-left: 50px;
+        font-size: 150px;
+    }
+    
+    .dropdown {
+        float: right;
+        position: fixed;
+        top: 0;
+        left: 180px;
+        z-index: 4;
+        margin-bottom: 15px;
+    }
+    
+    .dropdown .btn {
+        position: relative;
+        margin-bottom: 2px;
+        border-radius: 5px;
+        background-color: rgb(235, 232, 232);
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 213px;
+        font-size: 25px;
+    }
+    
+    .dropdown .btn {
+        display: inline-block;
+    }
+    
+    .dropdown .main {
+        background-color: rgba(230, 230, 230, 0.966);
+    }
+    
+    .dropdown .btn::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .dropdown .dropdown-content {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: rgb(253, 253, 253);
+        border-radius: 5px;
+        display: none;
+    }
+    
+    .dropdown .btn:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown .tomato {
+        color: tomato;
+    }
+    
+    .blue {
+        color: dodgerblue;
+    }
+    
+    .dropdown .pink {
+        color: lightcoral;
+    }
+    
+    .dropdown .green {
+        color: rgb(110, 165, 84);
+    }
+    
+    .dropdown .violet {
+        color: violet;
+    }
+    
+    .dropdown .gold {
+        color: rgb(216, 173, 65);
+    }
+    
+    .dropdown .brown {
+        color: chocolate;
+    }
+    
+    .dropdown .white {
+        color: #fff;
+    }
+    
+    .dropdown .tomato:hover {
+        box-shadow: 0px 5px 6px 0px rgba(245, 112, 89, 0.24);
+    }
+    
+    .dropdown .blue:hover {
+        box-shadow: 0px 5px 6px 0px rgba(92, 168, 230, 0.24);
+    }
+    
+    .dropdown .pink:hover {
+        box-shadow: 0px 5px 6px 0px rgba(245, 107, 89, 0.24);
+    }
+    
+    .dropdown .green:hover {
+        box-shadow: 0px 5px 6px 0px rgba(82, 235, 77, 0.24);
+    }
+    
+    .dropdown .violet:hover {
+        box-shadow: 0px 5px 6px 0px rgba(238, 130, 238, 0.377);
+    }
+    
+    .dropdown .gold:hover {
+        box-shadow: 0px 5px 6px 0px rgba(216, 173, 65, 0.295);
+    }
+    
+    .dropdown .brown:hover {
+        box-shadow: 0px 5px 6px 0px rgba(204, 114, 50, 0.404);
+    }
+    
+    .dropdown .nav {
+        box-shadow: 1px 8px 10px #7c7b7b4f;
+        margin-bottom: 10px;
+    }
+    
+    .tagline {
+        font-size: 35px;
+        font-style: italic;
+        color: whitesmoke;
+        position: absolute;
+        top: 640px;
+        left: 230px;
+    }
+    
+    .video {
+        position: absolute;
+        top: 110px;
+        left: 260px;
+    }
+    
+    .viideo {
+        height: 500px;
+        width: 1150px;
+        border-radius: 10px;
+    }
+    
+    .page {
+        width: 1520px;
+        height: 708px;
+        background-attachment: fixed;
+    }
+    
+    .page2 {
+        position: absolute;
+        top: 715px;
+    }
+    
+    .page3 {
+        background-image: url(img/front1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 1530px;
+        filter: blur(5px);
+    }
+    
+    .page2 {
+        position: absolute;
+        top: 2145px;
+        background-color: whitesmoke;
+    }
+    
+    .shop .box,
+    .about .box {
+        height: 200px;
+        background-color: rgba(245, 245, 245, 0.377);
+        float: left;
+        margin: 30px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 55px;
+        font-size: 50px;
+        padding-top: 150px;
+        transition: 0.3s ease-in-out;
+        transform: translateY(0);
+    }
+    
+    .shop .box,
+    .about .box {
+        color: white;
+    }
+    
+    .shop .box:hover,
+    .about .box:hover {
+        transform: translateY(-6px);
+    }
+    
+    .shop .box1 {
+        height: 500px;
+        width: 300px;
+        float: left;
+    }
+    
+    .shop .box1:hover {
+        background-color: dodgerblue;
+        box-shadow: 1px 8px 10px rgba(48, 151, 255, 0.411);
+    }
+    
+    .shop .box2 {
+        height: 500px;
+        width: 300px;
+        float: left;
+    }
+    
+    .shop .box2:hover {
+        background-color: tomato;
+        box-shadow: 1px 8px 10px rgba(250, 106, 81, 0.466);
+    }
+    
+    .shop .box,
+    .about .box {
+        height: 500px;
+        width: 300px;
+        float: left;
+    }
+    
+    .shop .box3:hover {
+        background-color: rgb(32, 179, 88);
+        box-shadow: 1px 8px 10px rgba(43, 182, 96, 0.432);
+    }
+    
+    .row2 {
+        position: absolute;
+        top: 3570px;
+        left: 210px;
+    }
+    
+    .avatar {
+        position: absolute;
+        top: 1630px;
+        left: 180px;
+        color: whitesmoke;
+        width: 85%;
+    }
+    
+    .avatar .float-left {
+        float: left;
+        margin: 30px;
+    }
+    
+    .avatar .float-right {
+        float: right;
+    }
+    
+    .avatar .para {
+        padding: 42px;
+        text-align: justify;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+    }
+    
+    .avatar .image {
+        height: 150px;
+        width: 150px;
+        border-radius: 75px;
+        margin: 30px;
+        transform: rotate(0);
+        transition: 0.6s ease-in-out;
+    }
+    
+    .avatar .div {
+        box-shadow: 7px 4px 10px 0px #9898988c;
+    }
+    
+    .avatar .box1 {
+        background-color: rgba(245, 245, 245, 0.24);
+        transform: scale(1, 1);
+        transition: 0.6s ease-in-out;
+        margin-bottom: 50px;
+    }
+    
+    .avatar .box1:hover {
+        transform: scale(0.99, 0.99);
+    }
+    
+    .avatar .box2 {
+        transform: scale(1, 1);
+        transition: 0.6s ease-in-out;
+    }
+    
+    .avatar .box2:hover {
+        transform: scale(0.99, 0.99);
+    }
+    
+    .avatar img:hover {
+        transform: rotateY(360deg);
+    }
+    
+    .row1 {
+        position: absolute;
+        top: 820px;
+        left: 210px;
+    }
+    
+    .about .box6 {
+        background-color: tomato;
+        box-shadow: 1px 8px 10px rgba(250, 106, 81, 0.466);
+        position: relative;
+    }
+    
+    .about .box7 {
+        background-color: #232323;
+        box-shadow: 1px 8px 10px #44444463;
+        position: relative;
+    }
+    
+    .about .box8 {
+        background-color: darkorange;
+        box-shadow: 1px 8px 10px rgba(255, 152, 27, 0.363);
+        position: relative;
+    }
+    
+    .about .box15 {
+        background-color: darkcyan;
+        box-shadow: 1px 8px 10px rgba(11, 143, 143, 0.397);
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        opacity: 1;
+        transition: 1s ease-in-out;
+        transform: rotateY(0deg);
+    }
+    
+    .about .box15:hover {
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+    
+    .about .box16 {
+        background-color: deeppink;
+        box-shadow: 1px 8px 10px rgba(255, 43, 156, 0.363);
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        opacity: 1;
+        transition: 1s ease-in-out;
+        transform: rotateY(0deg);
+    }
+    
+    .about .box16:hover {
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+    
+    .about .box17 {
+        background-color: dodgerblue;
+        box-shadow: 1px 8px 10px rgba(48, 151, 255, 0.411);
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        opacity: 1;
+        transition: 1s ease-in-out;
+        transform: rotateY(0deg);
+    }
+    
+    .about .box17:hover {
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+    
+    .content2 {
+        position: absolute;
+        left: -150px;
+        font-size: 40px;
+    }
+    
+    .page5 {
+        background-image: url('img/denis-pavlovic-wl5AypUmamo-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 3430px;
+        filter: blur(3px);
+    }
+    
+    .page7 {
+        background-image: url('img/dhe-haivan-JwLiLq24QbA-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 4845px;
+        filter: blur(3px);
+        height: 300px;
+    }
+    
+    .page6 {
+        position: absolute;
+        top: 4145px;
+        background-color: whitesmoke;
+    }
+    
+    .content3 {
+        float: left;
+        position: absolute;
+        left: -115px;
+        top: 100px;
+        font-size: 100px;
+    }
+    
+    .form {
+        position: absolute;
+        top: 2222px;
+        background-color: rgba(252, 210, 252, 0.678);
+        margin: 0 auto;
+        padding: 20px;
+        color: rgb(116, 1, 116);
+        border-radius: 10px;
+        box-shadow: 1px 8px 10px #44444463;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        width: 90%;
+        margin-left: 130px;
+        margin-right: 20px;
+    }
+    
+    .form input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        display: block;
+        outline: none;
+        padding: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 85%;
+        border-radius: 5px;
+        padding-left: 50px;
+        border: 5px solid white;
+    }
+    
+    .form input[type="submit"] {
+        color: rgb(116, 1, 116);
+        box-shadow: 1px 8px 10px #44444463;
+        border: 2px solid white;
+        width: 85%;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    
+    .form .btn:hover {
+        border: 2px solid rgb(116, 1, 116);
+    }
+    
+    .form label {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 100px;
+        font-size: 25px;
+    }
+    
+    .form input[type="text"]:invalid {
+        border: 5px solid firebrick;
+    }
+    
+    .form input[type="text"]:valid {
+        border: 5px solid forestgreen;
+    }
+    
+    .form input[type="text"]:focus {
+        background-color: whitesmoke;
+    }
+    
+    .form input[type="text"]:read-only {
+        background-color: whitesmoke;
+        border: 5px solid whitesmoke;
+        color: gray;
+        font-style: italic;
+    }
+    
+    .form input[type="email"]:disabled {
+        background-color: whitesmoke;
+        border: 5px solid whitesmoke;
+        color: #232323;
+        font-style: italic;
+    }
+    
+    .form input:hover,
+    textarea:hover {
+        box-shadow: 1px 8px 10px #44444463;
+    }
+    
+    .form .inputgroup {
+        position: relative;
+    }
+    
+    .form .icon {
+        position: absolute;
+        top: 63px;
+        left: 126px;
+    }
+    
+    @media screen and (max-width: 320px) {
+        .form {
+            background-color: lightblue;
+        }
+        label {
+            margin-left: 0px;
+        }
+        .icon {
+            left: 30px;
+        }
+    }
+    
+    .content4 {
+        position: absolute;
+        top: 1700px;
+        left: 50px;
+        font-size: 40px;
+    }
+    
+    .content5 {
+        position: absolute;
+        top: 4940px;
+        left: 650px;
+        font-size: 40px;
+        color: whitesmoke;
+    }
+    
+    .content5 .btn {
+        border: 1px solid white;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px white;
+    }
+    
+    .content5 .btn:hover {
+        color: #232323;
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div class="heading page" id="heading">
+    </div>
+    <div class="content">
+        <div class="pink">C</div>
+        <div class="blue">O</div>
+        <div class="green">D</div>
+        <div class="tomato">E</div>
+    </div>
+    <div class="video">
+        <iframe class="viideo" width="560" height="315" src="https://www.youtube.com/embed/cKhVupvyhKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <video width="560" height="315" autoplay>
+            <source src="https://www.youtube.com/watch?v=cKhVupvyhKk" type="video/mp4">
+        </video> -->
+    </div>
+    <div class="tagline">
+        A good programmer is someone who always looks both ways before crossing a one-way street.
+    </div>
+    <div class="dropdown">
+        <div class="nav">
+            <div class="btn main tomato"> <i class="fas fa-home"></i> Home
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main blue"> <i class="far fa-file-alt"></i> About us
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main pink"> <i class="fas fa-map-marker-alt"></i> Trips
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main green"> <i class="fas fa-gift"></i> Offers
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main violet"> <i class="fas fa-plane-departure"></i> Travel
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+            <div class="btn main brown"> <i class="fas fa-phone"></i> Contact Us
+                <div class="dropdown-content">
+                    <a href="" class="btn blue block opt ">opt 1</a>
+                    <a href="" class="btn pink block opt">opt 2</a>
+                    <a href="" class="btn green block opt">opt 3</a>
+                    <a href="" class="btn brown block opt">opt 4</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="page page2">
+
+    </div>
+    <div class="row1">
+        <div class="content2">
+            <h1 class="pink">A</h1>
+            <h1 class="blue">B</h1>
+            <h1 class="green">O</h1>
+            <h1 class="tomato">U</h1>
+            <h1 class="gold">T</h1>
+
+        </div>
+        <div class="about">
+
+            <div class="box6 box">
+                <p>Best of services provided</p>
+                <div class="box15 box"><i class="fab fa-accessible-icon"></i> <br>
+                    <p>Services</p>
+                </div>
+            </div>
+
+            <div class="box7 box">
+                <p>Great exciting offers</p>
+
+                <div class="box16 box"><i class="fas fa-gift"></i> <br>
+                    <p>Offers</p>
+                </div>
+            </div>
+            <div class="box8 box">
+                <p>Login to Learn more</p>
+                <div class="box17 box"><i class="far fa-user"></i><br>
+                    <p>Log In</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="page page3">
+
+    </div>
+    <div class="page page4">
+
+    </div>
+    <div class="content4">
+        <h1 class="pink">T</h1>
+        <h1 class="blue">E</h1>
+        <h1 class="green">A</h1>
+        <h1 class="tomato">M</h1>
+    </div>
+
+    <div class="avatar">
+        <div class="div box1">
+            <img class="float-left image" src="img/womanface.jpg" alt="">
+            <p class="para">
+                Name: Aaa Bbbb Ccc
+                <br> Qualifications: Aaa Bbb Ccc
+                <br> Experience: Aaaa
+                <br> Post: Aaa Bbb
+                <br> Quotation: <i>Aaaa Bbbb Cccc Dddd Eeee Ffff</i>
+            </p>
+        </div>
+        <div class="div box1">
+            <img class="float-left image" src="img/womanface.jpg" alt="">
+            <p class="para">
+                Name: Aaa Bbbb Ccc
+                <br> Qualifications: Aaa Bbb Ccc
+                <br> Experience: Aaaa
+                <br> Post: Aaa Bbb
+                <br> Quotation: <i>Aaaa Bbbb Cccc Dddd Eeee Ffff</i>
+            </p>
+        </div>
+
+    </div>
+    <div class="page page5">
+
+    </div>
+    <div class="row2">
+        <div class="content2">
+            <h1 class="pink">S</h1>
+            <h1 class="blue">H</h1>
+            <h1 class="green">O</h1>
+            <h1 class="tomato">P</h1>
+        </div>
+        <div class="shop">
+
+            <div class="box1 box">
+                <i class="fas fa-address-book"></i>
+                <br>
+                <p>Address Book</p>
+            </div>
+            <div class="box2 box">
+                <i class="fab fa-amazon"></i>
+                <br>
+                <p>Amazon</p>
+            </div>
+            <div class="box3 box"><i class="fab fa-android"></i> <br>
+                <p>Android</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="page6 page">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.1523816246!2d72.68221020433099!3d21.15914250210564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1578055317808!5m2!1sen!2sin"
+            width="1520" height="705" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+    <div class="form">
+        <div class="content3">
+            <h4 class="pink">S</h4>
+            <h4 class="blue">I</h4>
+            <h4 class="green">G</h4>
+            <h4 class="tomato">N</h4>
+            <h4>&nbsp;</h4>
+            <h4 class="blue">U</h4>
+            <h4 class="gold">P</h4>
+        </div>
+
+        <form action="">
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">First Name:</label>
+                    <input type="text" value="First Name" required>
+                    <span class="icon"><i class="fas fa-user"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Last Name:</label>
+                    <input type="text" placeholder="last Name" value="sample" readonly>
+                    <span class="icon"><i class="ln fas fa-user"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">DOB:</label>
+                    <input type="date" placeholder="DD/MM/YY" required>
+                    <span class="icon"><i class=" dob fas 
+                        fa-birthday-cake"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Email Id:</label>
+                    <input type="email" value="abcd@wxyz.pqrs" disabled>
+                    <span class="icon"><i class="mail fas fa-at"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Set Username:</label>
+                    <input type="text" placeholder="abc_123">
+                    <span class="icon"><i class="un far fa-user-circle"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Set Password:</label>
+                    <input type="password" placeholder="abc@123">
+                    <span class="icon"><i class="sp fas fa-key"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <div class="inputgroup">
+                    <label for="">Confirm Password:</label>
+                    <input type="password" class="blue" placeholder="abc@123">
+                    <span class="icon"><i class="cp fas fa-key"></i></span>
+                </div>
+            </div>
+            <div class="">
+                <label for="">Bio:</label>
+                <div class="inputgroup">
+                    <textarea name="" id="" cols="30" rows="10" class="blue" placeholder="abc xyz"></textarea>
+                </div>
+            </div>
+            <br>
+            <input type="submit" class="btn bg-white" value="Sign Up"></input>
+        </form>
+    </div>
+
+    <div class="page page7">
+    </div>
+    <div class="content5">
+        <span><i class="fab fa-instagram"></i></span>
+        <span>&nbsp;</span>
+        <span><i class="fab fa-facebook-square"></i></span>
+        <span>&nbsp;</span>
+        <span><i class="fab fa-linkedin"></i></span>
+        <span>&nbsp;</span>
+        <span> <i class="fas fa-envelope"></i>   </span>
+        <br><br>
+        <a class="btn white" href="#heading">
+            To The Top
+        </a>
+    </div>
+</body>
+
+</html>
