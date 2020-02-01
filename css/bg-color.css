@@ -25,3 +25,23 @@
 .bg-brown {
     background-color: chocolate;
 }
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-smoke {
+    background-color: whitesmoke;
+}
+
+.bg-black {
+    background-color: #232323;
+}
+
+.bg-light-gray {
+    background-color: rgb(176, 176, 197);
+}
+
+.bg-dark-gray {
+    background-color: #747081;
+}

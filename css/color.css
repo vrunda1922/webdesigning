@@ -25,3 +25,39 @@
 .brown {
     color: chocolate;
 }
+
+.white {
+    color: white;
+}
+
+.yellow-green {
+    color: rgb(205, 182, 50);
+}
+
+.orange-yellow {
+    color: rgb(255, 196, 0);
+}
+
+.orange {
+    color: orange;
+}
+
+.dark-orange {
+    color: darkorange;
+}
+
+.smoke {
+    color: whitesmoke;
+}
+
+.black {
+    color: #232323;
+}
+
+.light-gray {
+    color: rgb(185, 185, 209);
+}
+
+.dark-gray {
+    color: #676579;
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/bg-color.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .float-left {
+        float: left;
+        margin: 30px;
+    }
+    
+    .float-right {
+        float: right;
+    }
+    
+    .para {
+        padding: 42px;
+        text-align: justify;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+    }
+    
+    .image {
+        height: 150px;
+        width: 150px;
+        border-radius: 75px;
+        margin: 30px;
+        transform: rotate(0);
+        transition: 0.6s ease-in-out;
+    }
+    
+    .div {
+        box-shadow: 7px 4px 10px 0px #9898988c;
+    }
+    
+    .box1 {
+        transform: scale(1, 1);
+        transition: 0.6s ease-in-out;
+    }
+    
+    .box1:hover {
+        transform: scale(0.99, 0.99);
+    }
+    
+    .box2 {
+        transform: scale(1, 1);
+        transition: 0.6s ease-in-out;
+    }
+    
+    .box2:hover {
+        transform: scale(0.99, 0.99);
+    }
+    
+    img:hover {
+        transform: rotateY(360deg);
+    }
+    
+    .range1 {
+        padding: 15px;
+        font-size: 18px;
+        background-color: chartreuse;
+        color: black;
+        transition: 0.5s ease-in-out;
+        transform: translate(0px)
+    }
+    
+    .range1:hover [class=range1] {
+        transform: translate(-3px);
+        box-shadow: 2px 2px 10px #2323236c;
+    }
+    
+    .range2 {
+        padding: 15px;
+        font-size: 18px;
+        background-color: rgb(179, 255, 0);
+        color: black;
+    }
+    
+    .range3 {
+        padding: 15px;
+        font-size: 18px;
+        background-color: rgb(217, 255, 0);
+        color: black;
+    }
+    
+    .range4 {
+        padding: 15px;
+        font-size: 18px;
+        background-color: rgb(255, 251, 0);
+        color: black;
+    }
+    
+    .range5 {
+        padding: 15px;
+        font-size: 18px;
+        background-color: rgb(255, 153, 0);
+        color: black;
+    }
+    
+    .range6 {
+        padding: 15px;
+        font-size: 18px;
+        background-color: rgb(255, 38, 0);
+        color: black;
+        margin-bottom: 15px;
+    }
+    
+    .range-des .num {
+        margin-top: 35px;
+    }
+    
+    .range-des .jas {
+        margin: 0px 30px;
+        padding: 30px;
+        box-shadow: 2px 2px 10px #2323236b;
+    }
+    
+    .range-des h1 {
+        text-align: center;
+    }
+    
+    .range-des div {
+        padding: 15px;
+    }
+    
+    .m-class {
+        padding: 0px;
+    }
+    
+    .slider {
+        margin-right: 150px;
+        margin-top: 35px;
+        float: right;
+        height: 150px;
+        width: 20px;
+        background: rgb(252, 91, 4);
+        background: linear-gradient(0deg, rgba(252, 91, 4, 1) 0%, rgba(249, 200, 4, 1) 21%, rgba(246, 247, 3, 1) 41%, rgba(213, 247, 0, 1) 61%, rgba(153, 249, 3, 1) 82%, rgba(33, 255, 2, 1) 100%);
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+    }
+    
+    .slide1 {
+        height: 20px;
+        width: 35px;
+        border-radius: 5px;
+        background: rgb(244, 244, 244);
+        background: radial-gradient(circle, rgba(244, 244, 244, 1) 33%, rgba(218, 218, 218, 0.8326681014202556) 88%, rgba(194, 193, 193, 0.6393907904958859) 99%);
+        float: right;
+        position: absolute;
+        right: 142px;
+        top: 165px;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+    }
+    
+    .slide2 {
+        height: 20px;
+        width: 35px;
+        border-radius: 5px;
+        background: rgb(244, 244, 244);
+        background: radial-gradient(circle, rgba(244, 244, 244, 1) 33%, rgba(218, 218, 218, 0.8326681014202556) 88%, rgba(194, 193, 193, 0.6393907904958859) 99%);
+        float: right;
+        position: absolute;
+        right: 142px;
+        top: 165px;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+    }
+    
+    .slide3 {
+        height: 20px;
+        width: 35px;
+        border-radius: 5px;
+        background: rgb(244, 244, 244);
+        background: radial-gradient(circle, rgba(244, 244, 244, 1) 33%, rgba(218, 218, 218, 0.8326681014202556) 88%, rgba(194, 193, 193, 0.6393907904958859) 99%);
+        float: right;
+        position: absolute;
+        right: 142px;
+        top: 165px;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+    }
+    
+    .slide4 {
+        height: 20px;
+        width: 35px;
+        border-radius: 5px;
+        background: rgb(244, 244, 244);
+        background: radial-gradient(circle, rgba(244, 244, 244, 1) 33%, rgba(218, 218, 218, 0.8326681014202556) 88%, rgba(194, 193, 193, 0.6393907904958859) 99%);
+        float: right;
+        position: absolute;
+        right: 142px;
+        top: 165px;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+    }
+    
+    .slide5 {
+        height: 20px;
+        width: 35px;
+        border-radius: 5px;
+        background: rgb(244, 244, 244);
+        background: radial-gradient(circle, rgba(244, 244, 244, 1) 33%, rgba(218, 218, 218, 0.8326681014202556) 88%, rgba(194, 193, 193, 0.6393907904958859) 99%);
+        float: right;
+        position: absolute;
+        right: 142px;
+        top: 165px;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+    }
+    
+    .slide6 {
+        height: 20px;
+        width: 35px;
+        border-radius: 5px;
+        background: rgb(244, 244, 244);
+        background: radial-gradient(circle, rgba(244, 244, 244, 1) 33%, rgba(218, 218, 218, 0.8326681014202556) 88%, rgba(194, 193, 193, 0.6393907904958859) 99%);
+        float: right;
+        position: absolute;
+        right: 142px;
+        top: 165px;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+    }
+    
+    .box1:hover .slide1 {
+        top: 35px;
+        opacity: 1;
+    }
+    
+    .box1:hover .slide2 {
+        top: 55px;
+        opacity: 1;
+    }
+    
+    .box1:hover .slide3 {
+        top: 85px;
+        opacity: 1;
+    }
+    
+    .box1:hover .slide4 {
+        top: 115px;
+        opacity: 1;
+    }
+    
+    .box1:hover .slide5 {
+        top: 145px;
+        opacity: 1;
+    }
+    
+    .box1:hover .slide6 {
+        top: 165px;
+        opacity: 1;
+    }
+    
+    .box1:hover .slider {
+        opacity: 1;
+    }
+</style>
+
+
+<body>
+    <div class="range-des">
+        <h1>Range Description</h1><br>
+        <p class="range1 range">90-100</p>
+        <p class="range2 range">70-90</p>
+        <p class="range3 range">60-70</p>
+        <p class="range4 range">50-60</p>
+        <p class="range5 range">36-50</p>
+        <p class="range6 range">0-35</p>
+        <h1>Student-Info</h1>
+    </div><br>
+
+    <div class="div box1">
+        <img class="float-left image" src="img/womanface.jpg" alt="">
+        <div class="slider">
+
+        </div>
+        <a id="slide1">
+
+        </a>
+        <p class="para">
+            Name: Aaa Bbbb Ccc
+            <br> Physics: <span id="m11" class="m-class">50</span>
+            <br> Chemistry: <span id="m12" class="m-class">70</span>
+            <br> Maths: <span id="m13" class="m-class">90</span>
+            <br> Total (Out of 300): <span id="sum1"></span>
+        </p>
+    </div>
+    <div class="div box1">
+        <img src="img/man.webp" class="image float-left" alt="">
+        <div class="slider">
+
+        </div>
+        <a id="slide2">
+
+        </a>
+        <p class="para">
+            Name: Aaa Bbbb Ccc
+            <br> Physics: <span id="m21" class="m-class">60</span>
+            <br> Chemistry: <span id="m22" class="m-class">75</span>
+            <br> Maths: <span id="m23" class="m-class">35</span>
+            <br> Total (Out of 300): <span id="sum2"></span>
+        </p>
+    </div>
+    <div class="div box1">
+        <img class="float-left image" src="img/womanface.jpg" alt="">
+        <div class="slider">
+
+        </div>
+        <a id="slide3">
+
+        </a>
+        <p class="para">
+            Name: Aaa Bbbb Ccc
+            <br> Physics: <span id="m31" class="m-class">43</span>
+            <br> Chemistry: <span id="m32" class="m-class">75</span>
+            <br> Maths: <span id="m33" class="m-class">45</span>
+            <br> Total (Out of 300): <span id="sum3"></span>
+        </p>
+    </div>
+    <div class="div box1">
+        <img src="img/man.webp" class="image float-left" alt="">
+        <div class="slider">
+
+        </div>
+        <a id="slide4">
+
+        </a>
+        <p class="para">
+            Name: Aaa Bbbb Ccc
+            <br> Physics: <span id="m41" class="m-class">90</span>
+            <br> Chemistry: <span id="m42" class="m-class">95</span>
+            <br> Maths: <span id="m43" class="m-class">95</span>
+            <br> Total (Out of 300): <span id="sum4"></span>
+
+        </p>
+    </div>
+    <div class="div box1">
+        <img class="float-left image" src="img/womanface.jpg" alt="">
+        <div class="slider">
+
+        </div>
+        <a id="slide5">
+
+        </a>
+        <p class="para">
+            Name: Aaa Bbbb Ccc
+            <br> Physics: <span id="m51" class="m-class">36</span>
+            <br> Chemistry: <span id="m52" class="m-class">36</span>
+            <br> Maths: <span id="m53" class="m-class">36</span>
+            <br> Total (Out of 300): <span id="sum5"></span>
+        </p>
+    </div>
+    <div class="div box1">
+        <img src="img/man.webp" class="image float-left" alt="">
+        <div class="slider">
+
+        </div>
+        <a id="slide6">
+
+        </a>
+        <p class="para">
+            Name: Aaa Bbbb Ccc
+            <br> Physics: <span id="m61" class="m-class">60</span>
+            <br> Chemistry: <span id="m62" class="m-class">25</span>
+            <br> Maths: <span id="m63" class="m-class">35</span>
+            <br> Total (Out of 300): <span id="sum6"></span>
+        </p>
+    </div>
+
+</body>
+<script src="js/student.js"></script>
+
+</html>

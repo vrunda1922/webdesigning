@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(85, 85, 104);
+        }
+        
+        table {
+            margin: 50px;
+            margin-top: 25px;
+        }
+        
+        tbody {
+            box-shadow: 2px 2px 10px whitesmoke;
+        }
+        
+        th:hover,
+        td:hover {
+            box-shadow: 2px 2px 9px #232323;
+        }
+        
+        table,
+        tr,
+        td,
+        th {
+            border-collapse: collapse;
+        }
+        
+        .table,
+        .thead,
+        .tdata {
+            border: none;
+            /* background-color: whitesmoke; */
+            color: #b3b0c4;
+        }
+        
+        .thead {
+            background-color: #605d6b;
+            color: rgb(198, 198, 223);
+            opacity: 0.8;
+        }
+        
+        .thead,
+        .tdata {
+            width: 200px;
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+        }
+        
+        .toggle {
+            border: none;
+        }
+        
+        tr:nth-child(even) {
+            background-color: whitesmoke !important;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: white !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/bg-color.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div style="display: none;">
+        <span id="sub1">Maths</span>
+        <span id="sub2">Physics</span>
+        <span id="sub3">Chemistry</span>
+        <span id="sub4">PE</span>
+        <span id="sub5">English</span>
+        <span id="sub6">English</span>
+        <span id="sub7">Total</span>
+        <span id="m11" class="col1">12</span>
+        <span id="m12" class="col1">13</span>
+        <span id="m13" class="col1">50</span>
+        <span id="m14" class="col1">50</span>
+        <span id="m15" class="col1">50</span>
+        <span id="m21">12</span>
+        <span id="m22">13</span>
+        <span id="m23">50</span>
+        <span id="m24">50</span>
+        <span id="m25">50</span>
+        <span id="m31">12</span>
+        <span id="m32">13</span>
+        <span id="m33">50</span>
+        <span id="m34">50</span>
+        <span id="m35">50</span>
+        <span id="m41">12</span>
+        <span id="m42">13</span>
+        <span id="m43">50</span>
+        <span id="m44">50</span>
+        <span id="m45">50</span>
+        <span id="m51">12</span>
+        <span id="m52">13</span>
+        <span id="m53">50</span>
+        <span id="m54">50</span>
+        <span id="m55">50</span>
+        <span id="m61">12</span>
+        <span id="m62">13</span>
+        <span id="m63">50</span>
+        <span id="m64">50</span>
+        <span id="m65">50</span>
+    </div><br>
+    <h1>Marksheet</h1>
+    <table>
+        <tbody id="info">
+        </tbody>
+    </table>
+</body>
+<script src="js/myforloop.js"></script>
+
+</html>
